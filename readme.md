@@ -6,7 +6,7 @@ Merupakan Sistem Reservasi dan Management Hotel Grahawisata yang dibuat dengan m
 <h3> Database </h3>
 * untuk database bbisa diimport melalui file grahawisata.sql
  
- </br> </br>
+ </br>
  
 <h3> Previlege </h3>
 * akses username=admin dan pass=12345
