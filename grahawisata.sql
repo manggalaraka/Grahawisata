@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 05, 2017 at 05:59 AM
+-- Generation Time: Apr 13, 2017 at 03:45 PM
 -- Server version: 10.1.10-MariaDB
 -- PHP Version: 7.0.4
 
@@ -58,7 +58,11 @@ INSERT INTO `detail_reservasi` (`id_detail_rsv`, `id_pesanan`, `id_kamar`, `tang
 (88, 'order_000005', 'kamar_00002', '2017-03-29 14:00:00', NULL),
 (89, 'order_000005', 'kamar_00002', '2017-03-30 12:00:00', NULL),
 (90, 'order_000006', 'kamar_00003', '2017-03-29 14:00:00', NULL),
-(91, 'order_000006', 'kamar_00003', '2017-03-30 12:00:00', NULL);
+(91, 'order_000006', 'kamar_00003', '2017-03-30 12:00:00', NULL),
+(92, 'order_000007', 'kamar_00008', '2017-04-13 14:00:00', NULL),
+(93, 'order_000007', 'kamar_00008', '2017-04-14 12:00:00', NULL),
+(94, 'order_000007', 'kamar_00009', '2017-04-13 14:00:00', NULL),
+(95, 'order_000007', 'kamar_00009', '2017-04-14 12:00:00', NULL);
 
 -- --------------------------------------------------------
 
@@ -191,7 +195,8 @@ INSERT INTO `order` (`id_pesanan`, `id_pengunjung`, `day_start`, `day_end`, `che
 ('order_000003', '154232487412', '2017-03-28 00:00:00', '2017-03-31 00:00:00', NULL, NULL, NULL, 3, 3, 3150000, NULL),
 ('order_000004', '2354235235', '2017-03-29 00:00:00', '2017-03-30 00:00:00', NULL, NULL, NULL, 1, 1, 325000, NULL),
 ('order_000005', '242154214215', '2017-03-29 00:00:00', '2017-03-30 00:00:00', NULL, NULL, NULL, 1, 2, 480000, NULL),
-('order_000006', '12132154164', '2017-03-29 00:00:00', '2017-03-30 00:00:00', NULL, NULL, NULL, 1, 1, 215000, NULL);
+('order_000006', '12132154164', '2017-03-29 00:00:00', '2017-03-30 00:00:00', NULL, NULL, NULL, 1, 1, 215000, NULL),
+('order_000007', '33741589562', '2017-04-13 00:00:00', '2017-04-14 00:00:00', NULL, NULL, NULL, 1, 2, 700000, NULL);
 
 -- --------------------------------------------------------
 
@@ -264,7 +269,8 @@ INSERT INTO `pengunjung` (`id_pengunjung`, `nama`, `telepon`, `alamat`, `deleted
 ('3374151405920005', 'Dwen', '05622156651', 'Jl Bangka', NULL),
 ('3374151405920009', 'Rosalita AP', '085641173050', 'Jl. Nongko Sawit', NULL),
 ('3374151405920124', 'Ferjaki', '0816310321', 'Jl Boom', NULL),
-('3374151405921234', 'Don Juan', '092365735132', 'Jl Elpistoro', NULL);
+('3374151405921234', 'Don Juan', '092365735132', 'Jl Elpistoro', NULL),
+('33741589562', 'Angga', '0812562320', 'Jl. Hasanudi 43', NULL);
 
 -- --------------------------------------------------------
 
@@ -431,7 +437,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `detail_reservasi`
 --
 ALTER TABLE `detail_reservasi`
-  MODIFY `id_detail_rsv` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=92;
+  MODIFY `id_detail_rsv` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=96;
 --
 -- AUTO_INCREMENT for table `migrations`
 --
